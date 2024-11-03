@@ -26,7 +26,7 @@ ul {
 }
 
 h1 {
-	color: #ff8a48;
+	color:#ff8a48;
 	font-size: 50px;
 	
 }
@@ -143,6 +143,19 @@ hr {
 
 .showcase .btn {
   margin-top: 20px;
+}
+
+/* Copyright de la imagen principal showcase2.jpg- caption*/
+
+.caption {
+    position: absolute;
+    bottom: 10px; /* Ajusta según sea necesario */
+    left: 10px; /* Ajusta según sea necesario */
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo semi-transparente. Tres primeros valores son rgb y el último es el valor alfa que determina el nivel de transparencia entre 0 y 1 */
+    color: white; /* Color del texto */
+    padding: 1px; /* Espaciado. Puede reducirse para que el caption ocupe menos espacio visual*/
+    border-radius: 5px; /* Bordes redondeados */
+	font-size: 8px;
 }
 
 /* News Cards */
@@ -561,7 +574,7 @@ span {
 @media (max-width: 500px) {
 	
 	.titulo_inicio {
-    font-size: 1.7em; /* Ajusta el tamaño según sea necesario */
+    font-size: 1.9em; /* Ajusta el tamaño según sea necesario */
     line-height: 1.2; /* Mejora el espaciado */
   }
   
