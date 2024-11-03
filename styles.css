@@ -36,7 +36,7 @@ h2 {
 	font-size: 30px;
 }
 
-#titulo_inicio {
+.titulo_inicio {
 	font-size: 70px;
 }
 
@@ -249,6 +249,17 @@ hr {
 
 /* Mobil */
 @media (max-width: 700px) {
+	
+  .titulo_inicio {
+    font-size: 1.5em; /* Ajusta el tamaño según sea necesario */
+    line-height: 1.2; /* Mejora el espaciado */
+  }
+  
+  .segundo_titulo {
+	  font-size: 1em;
+	  line-height: 1.2;
+  }
+	
   .menu-btn {
     display: block;
   }
@@ -302,6 +313,12 @@ hr {
   .footer-links .footer-container {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .sticky-notes {
+    transform: scale(0.8); /* Reduce el tamaño de la animación al 80% */
+    margin: 0 auto; /* Centra horizontalmente */
+    display: block; /* Cambia a bloque para centrar correctamente */
+  }
 }
 
 @media (max-width: 500px) {
@@ -320,6 +337,10 @@ hr {
 
   .footer-links .footer-container ul {
     text-align: center;
+  }
+  
+  .sticky-notes {
+    transform: scale(0.7); /* Reduce aún más el tamaño al 70% en pantallas más pequeñas */
   }
 }
 
