@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licencias de uso</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="menu-btn">
+    </div>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="nav-main">
+            <!-- Brand -->
+            <img src="img/brand.jpg" alt="" class="nav-brand"/>
+            <!-- Left Nav -->
+            <ul class="nav-menu">
+                <li>
+                    <a href="index.html">INICIO</a>
+                </li>
+                <li>
+                    <a href="conocenos.html">CONOCENOS</a>
+                </li>
+                <li>
+                    <a href="servicios.html">SERVICIOS</a>
+                </li>
+                <li>
+                    <a href="noticias.html">NOTICIAS</a>
+                </li>
+                <li>
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+        </nav>
+
+        <header class="conocenos">
+            <h2>Licencias de uso</h2>
+        </header>
+    </div>
+    <div class="supercontenedor">
+        <div class="contenedor">
+            <div class="principal">
+				<p>
+					Derechos de Uso de Bootstrap Icons<br>
+					Uso de Bootstrap Icons<br>
+
+					Este sitio web utiliza Bootstrap Icons, que son iconos de código abierto y están disponibles bajo la licencia MIT.
+					 Bootstrap Icons se pueden usar de forma gratuita en cualquier proyecto, incluyendo proyectos comerciales.<br>
+					 
+					 The MIT License (MIT)<br>
+
+					Copyright (c) 2011-2024 The Bootstrap Authors<br>
+
+					Permission is hereby granted, free of charge, to any person obtaining a copy
+					of this software and associated documentation files (the "Software"), to deal
+					in the Software without restriction, including without limitation the rights
+					to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+					copies of the Software, and to permit persons to whom the Software is
+					furnished to do so, subject to the following conditions:
+
+					The above copyright notice and this permission notice shall be included in
+					all copies or substantial portions of the Software.
+
+					THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+					IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+					FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+					AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+					LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+					OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+					THE SOFTWARE.
+				</p>
+			</div>
+        </div>
+        <div class="contlateral">
+            <div class="lateral">
+                <p>
+				    <h2>Dónde estamos</h2><br>
+                    Calle Orzán nº1, 2ºpiso<br>
+                    15003 A Coruña<br>
+                    Teléfono: <span>981 206 210<br>
+                    ceoacademias@gmail.com</span>
+                </p>
+            </div>
+            <div class="lateral5">
+                <h2>Como Llegar</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2900.232017867407!2d-8.402355523456617!3d43.37217247056102!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd2e7c792d3a6447%3A0x3b6b0fc71f1b2c76!2sAcademia%20CEO!5e0!3m2!1ses!2ses!4v1730146601716!5m2!1ses!2ses"
+                        width="400" height="300" frameborder="0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="lateral10">
+                <p>
+				    <h2>Autobús urbano</h2><br>
+                    Paradas próximas de las líneas<br>
+                    <span>4 ,5, 6, 6-A ,7 y 11</span>
+                </p>
+            </div>
+        </div>
+    </div>
+      <!-- Footer Links -->
+    <div class="footer-links">
+		<div class="footer-container">
+		  <ul>
+			<li>
+			  <a href="noticias.html">
+				<h3>ULTIMAS NOTICIAS</h3>
+			  </a>
+			</li>
+			<li>
+			  <a href="noticias.html#noticia1">NUEVA PAU</a>
+			</li>
+			<li>
+			  <a href="noticias.html#noticia2">INICIO CURSO 24/25</a>
+			</li>
+			<li>
+			  <a href="noticias.html#noticia3">ESO/BACH</a>
+			</li>
+		  </ul>
+		  <ul>
+			<li>
+				<a href="contacto.html">
+				<h3>DATOS DE CONTACTO</h3>
+			  </a>
+			</li>
+			<li>Cl. Orzán nº1, 2º piso. 15003 A Coruña.
+				Teléfono: 981 206 210
+				ceoacademias@gmail.com
+			</li>
+		  </ul>
+		  <ul>
+			<li>
+			  <a href="avisolegal.html">
+				<h3>AVISO LEGAL</h3>
+			  </a>
+			</li>
+		  </ul>
+		  <ul>
+			<li>
+			  <a href="privacidad.html">
+				<h3>POLITICA DE PRIVACIDAD</h3>
+			  </a>
+			</li>
+		  </ul>
+		</div>
+    </div>
+
+  <!-- Footer -->
+	  <footer class="footer">
+		<h3>Academia Ceo </h3>
+		<h3>Centro de estudios Orzán</h3>
+	  </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
+
+
