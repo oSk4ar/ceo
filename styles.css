@@ -689,7 +689,7 @@ span {
   }
 
   .contlateral {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     width: 95%;
 	margin-right: 20px;
 	margin-top: 20px;
