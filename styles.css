@@ -98,7 +98,7 @@ hr {
   
   font-weight: normal;
   font-style: normal;
-  font-size: 42px;  /* Preferred icon size 24 */
+  font-size:40px;  /* Preferred icon size 24 */
   display: inline-block;
   line-height: 1;
   text-transform: none;
@@ -206,6 +206,8 @@ hr {
   text-align: center; /* Centrar el texto */
   padding: 10px; /* Espacio interno */
   min-width: 200px; /* Ajusta según sea necesario */
+  box-sizing: border-box;  /* Asegura que el padding no afecte el tamaño total // Esto significa que cualquier padding
+  o margen se incluya dentro del tamaño total del elemento, evitando que cambie de tamaño inesperadamente.*/
 }
 
 .news-cards div p {
@@ -223,9 +225,9 @@ hr {
 }
 
 .news-cards img {
-  max-width: 100%; /* Imagen responsiva */
-  height: 180px; /* Altura fija para consistencia */
-  object-fit: cover; /* Mantener proporciones sin distorsionar */
+  width: 100%;  /* Asegura que las imágenes ocupen todo el ancho disponible */
+  height: 180px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Mantiene la proporción sin distorsionar */
   margin-bottom: 10px; /* Espacio entre la imagen y el texto */
 }
 
