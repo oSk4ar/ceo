@@ -569,7 +569,7 @@ span {
 }
 
 
-/* Mobil */
+/* Dispositivos móviles */
 
 
 @media (max-width: 700px) {
@@ -632,7 +632,7 @@ span {
     transform: scale(0.8); /* Reduce el tamaño de la animación al 80% */
     margin: 0 auto; /* Centra horizontalmente */
     display: block; /* Cambia a bloque para centrar correctamente */
-  }
+  } 
 }
 
 @media (max-width: 500px) {
@@ -671,8 +671,6 @@ span {
  
 }
 
-
-/*dispositivos móviles resto de páginas excepto index.html*/
 
 @media (max-width: 600px) {
   .supercontenedor {
