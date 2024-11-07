@@ -637,6 +637,8 @@ span {
     grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas pequeñas */
     gap: 15px;
   }
+  
+  
 
   .cards-banner-one .content,
   .cards-banner-two .content {
@@ -688,6 +690,11 @@ span {
     transform: scale(0.7); /* Reduce aún más el tamaño al 70% en pantallas más pequeñas */
 	left: 35%; /* Ajusta este valor para mover horizontalmente */
   }
+  
+  .news-cards img {
+    max-width: 100%;
+    height: auto;
+  }
  
 }
 
@@ -733,8 +740,29 @@ span {
 	  margin-left: 20px;
 	  margin-bottom: 20px;
   }
+  
 }
 
+
+@media (max-width: 700px) and (orientation: landscape) {
+	
+	.nav-main ul.nav-menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2f3640;
+    width: 60%; /* Se puede aumentar o reducir el ancho del menú */
+    height: 100vh; /* En proporción al tamaño de la imagen de fondo .showcase */
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 50px 30px;
+	transform: translateX(-100%); /* Fuera de la vista */
+    transition: transform 0.5s ease-in-out;
+	z-index: 999;
+  }
+	
+}
 
 
 
