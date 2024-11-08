@@ -9,6 +9,7 @@ body {
   font-family:  Verdana, sans-serif;
   background-color: #00959c;
   font-size: 18px;
+  color: #333333;
 }
 
 .nav-menu a {
@@ -18,6 +19,10 @@ body {
 a {
   color: #ffffff;
   text-decoration: none;
+}
+
+.principal a {
+	color: #ff8a48;
 }
 
 ul {
@@ -233,11 +238,23 @@ hr {
     width: 100%; /* Asegúrate de que el ancho sea controlado */
 }
 
-.news-cards img {
+/*imágenes pequeñas de la página principal excepto la primera con el logo de CEO*/
+
+.news-cards .imagenes-index {
   width: 100%;  /* Asegura que las imágenes ocupen todo el ancho disponible */
   height: 180px; /* Altura fija para todas las imágenes */
   object-fit: cover; /* Mantiene la proporción sin distorsionar */
   margin-bottom: 10px; /* Espacio entre la imagen y el texto */
+}
+
+/*identificador único para la imagen de CEO de la página principal,
+ para que no se recorten las letras*/
+
+#logoceo {
+	max-width: 100%;
+	height: 180px;
+	margin-bottom: 10px;
+	
 }
 
 .news-cards h3 {
@@ -448,9 +465,9 @@ span {
 	color: red;
 }
 
-.precios span {
-	font-weight: bold;
+.contenedor span {
 	color: black;
+	background-color: #FFFF00;
 }
 
 .contenedor ul {
@@ -583,7 +600,7 @@ span {
 /* Dispositivos móviles */
 
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
 	
   .menu-btn {
     display: block;
@@ -623,15 +640,6 @@ span {
     transform: translateX(0); /* Muestra el menú */
   }
 
- /* .nav-main ul.nav-menu-right {
-    margin-right: 50px;
-  }
-  
-
-  .news-cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  */
   .news-cards {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas pequeñas */
