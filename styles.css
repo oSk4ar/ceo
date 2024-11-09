@@ -7,7 +7,7 @@
 
 body {
   font-family:  Verdana, sans-serif;
-  background-color: #00959c;
+  background-color: #03989e;
   font-size: 18px;
   color: #333333;
 }
@@ -22,7 +22,7 @@ a {
 }
 
 .principal a {
-	color: #ff8a48;
+	color: #ff914c;
 }
 
 ul {
@@ -30,23 +30,33 @@ ul {
 }
 
 h1 {
-	color:#ff8a48;
+	color: #ff914c;
 	font-size: 50px;
 	
 }
 
 h2 {
-	color: #0048aa;
+	color: #004aad;
 	font-size: 30px;
 }
 
 .titulo_inicio {
-	font-size: 70px;	
+	font-size: 80px;	
+	color: #FFFFFF;
+	margin-bottom: 150px;
+	text-shadow: 2px 2px 5px rgba(169, 169, 169, 0.7),   /* Sombra hacia abajo a la derecha */
+    -2px -2px 5px rgba(169, 169, 169, 0.7), /* Sombra hacia arriba a la izquierda */
+    2px -2px 5px rgba(169, 169, 169, 0.7),  /* Sombra hacia arriba a la derecha */
+    -2px 2px 5px rgba(169, 169, 169, 0.7);  /* Sombra hacia abajo a la izquierda */
 }
 
-.fondo_titulo {
-	background-color: rgba(0, 0, 0, 0.4); /* Fondo semi-transparente. Tres primeros valores son rgb y el último es el valor alfa que determina el nivel de transparencia entre 0 y 1 */
-	width: 100%;
+.segundo_titulo {
+	margin-bottom: 0;
+	color: #ff914c;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7),   /* Sombra hacia abajo a la derecha */
+    -2px -2px 5px rgba(0, 0, 0, 0.7), /* Sombra hacia arriba a la izquierda */
+    2px -2px 5px rgba(0, 0, 0, 0.7),  /* Sombra hacia arriba a la derecha */
+    -2px 2px 5px rgba(0, 0, 0, 0.7);  /* Sombra hacia abajo a la izquierda */
 }
 
 /* Títulos de cabecera */
@@ -72,8 +82,7 @@ h2 {
 }
 
 .nav-brand {
-  width: 50px;
-  margin-bottom: 3px;
+  width: 120px;
 }
 
 /* Navbar Left */
@@ -260,12 +269,12 @@ hr {
 .news-cards h3 {
   font-size: 20px;
   margin: 10px 0;
-  color: #0048aa;
+  color: #004aad;
 }
 
 .news-cards a {
   padding: 10px 0;
-  color: #5be0e7;
+  color: #5ce1e6;
   display: inline-block;
   font-weight: bold;
 }
@@ -274,25 +283,7 @@ hr {
 ."bi bi-chevron-double-right" {
   vertical-align: -21%; /* Alinea la palabra mas con el simbolo double arrow en página principal */
   margin-left: 5px; /* Espacio entre el texto y el ícono */
-  color: #5be0e7;
-}
-
-.cards-banner-two p {
-  margin: 10px 0 20px 0;
-}
-
-/* CARDS BANNER TWO*/
-.cards-banner-two {
-  width: 100%;
-  height: 350px;
-  background: url("./img/image-five.jpg") no-repeat center center/cover;
-  display: inline-block; /* Para que la imagen y el caption estén juntos */
-  position: relative;
-}
-
-.cards-banner-two .content {
-  width: 50%;
-  padding: 100px 0 0 30px;
+  color: #5ce1e6;
 }
 
 /* Follow */
@@ -303,8 +294,37 @@ hr {
   text-align: center;
   font-size: 30px;
   margin-bottom: 20px;
-  color: #0048aa;
+  color: #004aad;
 }
+
+.social-footer {
+   border: 7px solid #ff914c;
+   padding: 0 1em 1em;
+   margin-top: 5px;
+   border-radius: 50%;
+   background-color: #5ce1e6;
+}
+
+.social-footer p {
+  font: oblique bold 30px 'Arial black';
+  text-align: center;
+  font-size: 30px;
+  color: #004aad;
+ 
+}
+
+.whatsapp {
+   margin-top: 40px;
+  
+  
+}
+
+ .whatsapp-icon {
+   font-size: 2rem;  /* Tamaño del ícono */
+   color: #25D366;   /* Verde típico de WhatsApp */
+   
+        }
+
 .links {
   display: flex;
   align-items: center;
@@ -322,7 +342,7 @@ hr {
 /* Links */
 .footer-links {
   background: #2f3640;
-  color: #616161;
+  color: #FFFFFF;
   font-size: 12px;
   padding: 35px 0;
 }
@@ -344,15 +364,14 @@ hr {
 }
 
 .footer {
+  align-items: center; 
   background: #2f3640;
-  color: #616161;
-  font-size: 12px;
+  color: #ff914c;
   padding: 20px 0;
   text-align: center;
   font-size: 1rem;
   padding-bottom: 20px;
 }
-
 
 
 /*CODIGO PARA LOS POST-IT*/
@@ -458,17 +477,21 @@ hr {
 }
 
 em, strong {
-	color: #5be0e7;
+	color: #5ce1e6;
 }
 
 span {
 	color: red;
 }
 
-.contenedor span {
-	color: black;
-	background-color: #FFFF00;
+.lateral span {
+	color: #ff914c;
 }
+
+.form-container span {
+	color: #004aad;
+}
+
 
 .contenedor ul {
 	list-style-type: disc;
@@ -513,7 +536,7 @@ span {
 
 /* Ajustes a los textos CAMBIOS DE COLORES*/
 .supercontenedor h1 {
-  color: #ff8a48;
+  color: #ff914c;
   font-size: 2.5rem; /* Tamaño ajustado */
   margin-bottom: 20px; /* Margen inferior */
 }
@@ -524,7 +547,7 @@ span {
 
 .contenedor {
 	 background-color: white;
-	 border: 3px solid #ff8a48;
+	 border: 3px solid #ff914c;
 }
 
 /* Precios y Grupos */
@@ -540,7 +563,7 @@ span {
 }
 
 .supercontenedor strong {
-  color:  #ff8a48;
+  color: #ff914c;
 }
 
 
@@ -556,7 +579,7 @@ span {
 }
 
 .form-container h2 {
-    color: #0048aa; /* Color del título */
+    color: #004aad; /* Color del título */
     margin-bottom: 15px; /* Margen inferior */
 }
 
@@ -588,14 +611,13 @@ span {
 }
 
 .form-container input[type="submit"]:hover {
-    background-color: #5be0e7; /* Cambia a un color más claro al pasar el cursor */
+    background-color: #5ce1e6; /* Cambia a un color más claro al pasar el cursor */
 }
 
 .form-container textarea {
     resize: vertical; /* Permite redimensionar solo verticalmente */
     height: 150px; /* Altura predeterminada */
 }
-
 
 /* Dispositivos móviles */
 
@@ -648,8 +670,7 @@ span {
   
   
 
-  .cards-banner-one .content,
-  .cards-banner-two .content {
+  .cards-banner-one .content {
     width: 90%;
 	padding: 40px 20px;
   }
@@ -681,8 +702,7 @@ span {
     grid-template-columns: 1fr;
   }
 
-  .cards-banner-one .content,
-  .cards-banner-two .content {
+  .cards-banner-one .content {
     width: 100%;
     padding: 60px 20px;
   }
