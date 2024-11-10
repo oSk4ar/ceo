@@ -12,11 +12,16 @@ body {
   color: #333333;
 }
 
-.nav-menu a {
-	font-family: sans-serif, Verdana;
+.a {
+	color: #ff914c;
 }
 
-a {
+.nav-menu a {
+	font-family: sans-serif, Verdana;
+	font-weight: bold;
+}
+
+.nav-main a, .footer-links a {
   color: #ffffff;
   text-decoration: none;
 }
@@ -82,7 +87,8 @@ h2 {
 }
 
 .nav-brand {
-  width: 120px;
+  width: 50px;
+  margin-bottom: 1px;
 }
 
 /* Navbar Left */
@@ -632,6 +638,8 @@ span {
   .menu-btn:hover {
     opacity: 0.5;
   }
+
+/* menu lateral para móviles */
 
   .nav-main ul.nav-menu {
     display: block;
