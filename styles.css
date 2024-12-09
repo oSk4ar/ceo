@@ -414,7 +414,6 @@ hr {
   color: #000;
   background: #ffc;
   display: block;
-  height: auto;
   width: 10em;
   padding: 1em;
   box-shadow: 5px 5px 7px rgba(33, 33, 33, 0.7);
@@ -423,6 +422,10 @@ hr {
   text-overflow: ellipsis;
   white-space: normal;
   transform: rotate(-6deg);
+  aspect-ratio: 1 / 0.98; /* Mantiene la proporción 1:1 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sticky-notes ul li:nth-child(even) a {
@@ -451,19 +454,22 @@ hr {
 }
 
 .sticky-notes ul li h2 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   padding-bottom: 10px;
+  font-family: "Dancing Script";
+  text-align: center;
+  
 }
 
 .sticky-notes ul li p {
   font-family: "Reenie Beanie", Arial, sans-serif;
   font-size: 1rem;
+  text-align: center;
 }
 
 
-
-/*Codigo para resto de páginas excepto index.html*/
+/*Codigo para todas las páginas excepto index.html*/
 
 .supercontenedor{
 	display: flex;
@@ -592,13 +598,20 @@ span {
  text-align: center; 
  }
 
+
+
+
+
 /* Pantallas más pequeñas y dispositivos móviles */
+
 
 @media (max-width: 1024px) and (min-width: 700px) {
 	
-	body {
-		background-color: blue;
-	}
+	
+	.sticky-notes {
+    transform: scale(0.8); /* Reduce el tamaño de la animación al 80% */
+	right: 35%;
+  } 
 	
 	.menu-btn {
     display: block;
@@ -644,8 +657,6 @@ span {
     gap: 15px;
   }
   
-  
-
   .cards-banner-one .content {
     width: 90%;
 	padding: 40px 20px;
@@ -655,14 +666,6 @@ span {
     grid-template-columns: repeat(2, 1fr);
   }
   
-  .sticky-notes {
-    transform: scale(0.8); /* Reduce el tamaño de la animación al 80% */
-	right: 35%;
-	
-	
-    
-  } 
-
 }
 
 @media (max-width: 1024px) and (min-width: 700px) and (orientation: landscape) {
@@ -727,8 +730,7 @@ span {
   }
   
   .sticky-notes {
-    transform: scale(0.6); /* Reduce el tamaño de la animación al 60% */
-	top: -20%;
+    transform: scale(0.8); /* Reduce el tamaño de la animación al 60% */
 	right: 35%;
 	
 	
@@ -740,10 +742,6 @@ span {
 
 
 @media (max-width: 700px) and (min-width: 600px) {
-	
-	body {
-		background-color: green;
-	}
 	
   .menu-btn {
     display: block;
@@ -812,6 +810,10 @@ span {
 
 @media (max-width: 700px) and (min-width: 600px) and (orientation: landscape) {
 	
+	body {
+		background-color: green;
+	}
+	
   .menu-btn {
     display: block;
 	cursor: pointer;
@@ -856,8 +858,6 @@ span {
     gap: 15px;
   }
   
-  
-
   .cards-banner-one .content {
     width: 90%;
 	padding: 40px 20px;
@@ -875,11 +875,8 @@ span {
 }
 
 
+
 @media (max-width: 600px) and (min-width: 500px) {
-	
-	body {
-		background-color: yellow;
-	}
 	
 	.sticky-notes {
     transform: scale(0.7); /* Reduce el tamaño de la animación al 70% */
@@ -929,14 +926,11 @@ span {
     grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas pequeñas */
     gap: 15px;
   }
-  
-  
 
   .cards-banner-one .content {
     width: 90%;
 	padding: 40px 20px;
   }
-
 	
   .supercontenedor {
     flex-direction: column;
@@ -989,7 +983,11 @@ span {
 @media (max-width: 600px) and (min-width: 500px) and (orientation: landscape) {
 	
 	
-.menu-btn {
+	body {
+		background-color: yellow;
+	}
+	
+  .menu-btn {
     display: block;
 	cursor: pointer;
   }
@@ -1031,9 +1029,7 @@ span {
     display: grid;
     grid-template-columns: 1fr 1fr; /* Dos columnas en pantallas pequeñas */
     gap: 15px;
-  }
-  
-  
+  } 
 
   .cards-banner-one .content {
     width: 90%;
@@ -1044,7 +1040,6 @@ span {
     grid-template-columns: repeat(2, 1fr);
   }
   	
-	
   .supercontenedor {
     flex-direction: column;
   }
@@ -1096,10 +1091,6 @@ span {
 
 @media (max-width: 500px) and (min-width: 350px) {
 	
-	body {
-		background-color: red;
-	}
-	
 	.titulo_inicio {
     font-size: 1.9em; /* Ajusta el tamaño según sea necesario */
     line-height: 1.2; /* Mejora el espaciado */
@@ -1126,7 +1117,7 @@ span {
     left: 0;
     background: #2f3640;
     width: 60%; /* Se puede aumentar o reducir el ancho del menú */
-    height: 75vh; /* En proporción al tamaño de la imagen de fondo .showcase */
+    height: 100vh; /* En proporción al tamaño de la imagen de fondo .showcase */
     border-right: #ccc 1px solid;
     opacity: 0.9;
     padding: 50px 30px;
@@ -1147,31 +1138,25 @@ span {
   .nav-main ul.nav-menu.show {
     transform: translateX(0); /* Muestra el menú */
   }
-
+	
   .news-cards {
-    display: grid;
-    grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
-    gap: 15px;
+    grid-template-columns: 1fr;
   }
-  
-
-  .footer-links .footer-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  
 
   .cards-banner-one .content {
     width: 100%;
     padding: 60px 20px;
   }
-  
+  .footer-links .footer-container {
+    grid-template-columns: 1fr;
+  }
 
   .footer-links .footer-container ul {
     text-align: center;
   }
   
   .sticky-notes {
-    transform: scale(0.5); /* Reduce aún más el tamaño al 70% en pantallas más pequeñas */
+    transform: scale(0.7); /* Reduce aún más el tamaño al 70% en pantallas más pequeñas */
 	left: 35%; /* Ajusta este valor para mover horizontalmente */
   }
   
@@ -1180,11 +1165,45 @@ span {
     height: auto;
   }
  
+ .supercontenedor {
+    flex-direction: column;
+  }
+
+  .contenedor {
+    width: 100%;
+    margin-right: 0;
+	margin-left: 20px;
+	padding: 10px;
+	margin-bottom: 20px;
+	overflow-x: hidden;
+  }
+
+  .contlateral {
+    flex-wrap: nowrap;
+    width: 95%;
+	margin-right: 20px;
+	margin-top: 20px;
+  }
+
+  .lateral5 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .lateral {
+    width: 100%;
+    padding: 10px;
+  }
+ 
 }
 
 
 
 @media (max-width: 500px) and (min-width: 350px) and (orientation: landscape) {
+	
+	body {
+		background-color: red;
+	}
 	
    .titulo_inicio {
     font-size: 1.9em; /* Ajusta el tamaño según sea necesario */
@@ -1226,10 +1245,6 @@ span {
 
 
 @media (max-width: 350px) and (min-width: 300px) {
-	
-  body {
-    background-color: black;
-  }
   
   .titulo_inicio {
     font-size: 1.5em; /* Ajusta el tamaño según sea necesario */
@@ -1307,6 +1322,37 @@ span {
     max-width: 100%;
     height: auto;
   }
+  
+  .supercontenedor {
+    flex-direction: column;
+  }
+
+  .contenedor {
+    width: 100%;
+    margin-right: 0;
+	margin-left: 20px;
+	padding: 10px;
+	margin-bottom: 20px;
+	overflow-x: hidden;
+  }
+
+  .contlateral {
+    flex-wrap: nowrap;
+    width: 95%;
+	margin-right: 20px;
+	margin-top: 20px;
+  }
+
+  .lateral5 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .lateral {
+    width: 100%;
+    padding: 10px;
+  }
+  
 }
 
 @media (max-width: 300px) {
