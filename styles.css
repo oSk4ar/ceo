@@ -1,3 +1,47 @@
+/* Código para la fuente descargada de Google fonts integrada en el proyecto que se usa en los sticky-notes: Dancing Script */
+
+/* Define la fuente Dancing Script variable */
+@font-face {
+    font-family: "DancingScript";
+    src: url('./fonts/DancingScript-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DancingScript";
+    src: url('./fonts/static/DancingScript-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DancingScript";
+    src: url('./fonts/static/DancingScript-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DancingScript";
+    src: url('./fonts/static/DancingScript-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DancingScript";
+    src: url('./fonts/static/DancingScript-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+
+
+
+
+
 /* Global */
 * {
   box-sizing: border-box;
@@ -11,6 +55,7 @@ body {
   font-size: 18px;
   color: #333333;
 }
+
 
 .a {
 	color: #ff914c;
@@ -389,6 +434,7 @@ hr {
 /*CODIGO PARA LOS POST-IT*/
 
 /* Sticky Notes */
+
 .sticky-notes {
   position: absolute;
   top: 4%; /* Ajusta este valor para mover verticalmente */
@@ -454,19 +500,20 @@ hr {
 }
 
 .sticky-notes ul li h2 {
-  font-size: 1.5rem;
-  font-weight: bold;
-  padding-bottom: 10px;
-  font-family: "Dancing Script";
-  text-align: center;
-  
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+    font-family: "DancingScript", sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
 
 .sticky-notes ul li p {
-  font-family: "Reenie Beanie", Arial, sans-serif;
-  font-size: 1rem;
-  text-align: center;
+    font-family: "DancingScript", sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+    text-align: center;
 }
+
 
 
 /*Codigo para todas las páginas excepto index.html*/
