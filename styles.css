@@ -57,8 +57,11 @@ body {
 }
 
 
-.a {
+a {
 	color: #ff914c;
+	text-decoration: none; /* Quita el subrayado del enlace */
+    text-decoration: underline; /* Añade subrayado al pasar el ratón por encima */
+	
 }
 
 .nav-menu a {
@@ -344,7 +347,8 @@ hr {
   color: #5ce1e6;
 }
 
-/* Follow */
+/* Siguenos */
+
 .social {
   margin: 50px;
 }
@@ -355,26 +359,9 @@ hr {
   color: #004aad;
 }
 
-.social-footer {
-   border: 7px solid #ff914c;
-   padding: 0 1em 1em;
-   margin-top: 5px;
-   border-radius: 50%;
-   background-color: #5ce1e6;
-}
-
-.social-footer p {
-  font: oblique bold 30px 'Arial black';
-  text-align: center;
-  font-size: 30px;
-  color: #004aad;
- 
-}
 
 .whatsapp {
-   margin-top: 40px;
-  
-  
+   margin-top: 40px; 
 }
 
  .whatsapp-icon {
@@ -391,6 +378,7 @@ hr {
 
 .links a {
   margin: 0 30px;
+  color: #ffffff;
 }
 
 .links a i {
@@ -402,7 +390,7 @@ hr {
   background: #2f3640;
   color: #FFFFFF;
   font-size: 12px;
-  padding: 35px 0;
+  padding: 35px 10px;
 }
 
 .footer-container {
@@ -411,6 +399,7 @@ hr {
   gap: 10px;
   align-items: flex-start;
   justify-content: center;
+
 }
 
 .footer-container ul {
@@ -557,7 +546,7 @@ span {
 	color: #ff914c;
 }
 
-.form-container span {
+.form-container span, .form-container a {
 	color: #004aad;
 }
 
