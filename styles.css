@@ -52,7 +52,7 @@
 body {
   font-family:  Verdana, sans-serif;
   background-color: #03989e;
-  font-size: 18px;
+  font-size: 17px;
   color: #333333;
 }
 
@@ -84,13 +84,14 @@ ul {
 
 h1 {
 	color: #ff914c;
-	font-size: 6vh;
+	font-size: 6.7vh;
 	
 }
 
 h2 {
 	color: #004aad;
-	font-size: 3.3vh;
+	font-size: 1.8vw;
+	
 }
 
 .titulo_inicio {
@@ -123,6 +124,8 @@ h2 {
 
 .cabecera {
 	font-family:  sans-serif;
+	text-shadow: 0.3px 0.3px 5px black;
+	height: auto;
 }
 
 .container {
@@ -256,21 +259,6 @@ hr {
 	font-size: 8px;
 }
 
-/* Copyright imagen googlemaps */
-
-.caption2 {
-    position: absolute;
-    bottom: 0; /* Coloca el caption al pie de la imagen */
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.1); /* Fondo semitransparente */
-    color: white;
-    padding: 5px; /* Ajusta el padding según sea necesario */
-    font-size: 8px;
-    text-align: center; /* Centra el texto dentro del caption */
-    display: inline-block; /* El fondo se ajusta al tamaño del texto */
-    box-sizing: border-box; /* Asegura que el padding no agrande el tamaño del caption */
-}
-
 
 /* News Cards */
 
@@ -389,7 +377,7 @@ hr {
 .footer-links {
   background: #2f3640;
   color: #FFFFFF;
-  font-size: 12px;
+  font-size: 0.75rem;
   padding: 35px 10px;
 }
 
@@ -429,7 +417,7 @@ hr {
   position: absolute;
   top: 10%; /* Ajusta este valor para mover verticalmente */
   left: 65%; /* Ajusta este valor para mover horizontalmente */
-  z-index: 999;
+  z-index: 900;
   margin: 0;
   padding: 0;
  
@@ -506,31 +494,78 @@ hr {
 
 /*Codigo para todas las páginas excepto index.html*/
 
-.supercontenedor{
+.supercontenedor {
 	display: flex;
 	flex-direction: row;
-	margin: 2.5vw 5vw 5vw 2vw;
+	margin: 0 1vw 5vw 2vw;
 	align-items: stretch; /* Asegúrate de que los hijos se estiren para igualar la altura */
 	min-width: 200px;
+	background-color: #5ce1e6;
+	border-width: 50px 50px 50px 10px;
+	border-style: solid;
+	border-color: #5ce1e6; 
+	border-radius: 40px;
+}
+
+.supercontenedor p {
+  margin-bottom: 15px; /* Margen entre párrafos */
+}
+
+.supercontenedor strong {
+  color: #ff914c;
 }
 
 .contenedor {
-    flex: 1; /* Permite que el contenedor principal ocupe todo el espacio disponible */
+    flex: 2; /* Permite que el contenedor principal ocupe todo el espacio disponible */
     width: 100%; /* Ajusta al 100% del contenedor padre */
-    max-width: 800px; /* Máximo ancho */
     margin-right: 2vw;
-
-    padding: 20px; /* Espaciado interno */
-	min-width: 200px;
+    padding: 60px 25px; /* Espaciado interno */
+	min-width: 200px;	
+	background-color: #fafafa;
+	border: 3px solid #ff914c;
 }
+
+.contenedor ul {
+  list-style-type: disc;
+  margin-left: 30px;
+  margin-bottom: 20px; /* Separación inferior */
+}
+
 
 .principal, .precios, .grupos {
     word-wrap: break-word; /* Permitir que las palabras largas se dividan */
-    line-height: 1.5; /* Mejorar legibilidad */
+    line-height: 1.3; /* Mejorar legibilidad */	
+	text-indent: 0.6rem;
+}
+
+.precios, .grupos {
+  margin-bottom: 20px; /* Separación entre secciones */
+}
+
+.imagen-conocenos-1 {
+	aspect-ratio: 16/6;
+	width: 100%;
+	height:auto;
+	border: 0.3vw solid orange;
+	background-color: white;
+	padding: 0.3vw;
+	margin-bottom: 1vmin;
+}
+
+.imagen-contacto {
+  width: 100%;
+  height: auto;
+  margin-bottom: 3px; /* Separación inferior entre elementos laterales */
+  margin-top: 100px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .img1_servicios {
    width: 100%;
+   padding: 10px;
 }
 
 em, strong {
@@ -560,16 +595,18 @@ span {
 }
 
 .contlateral {
-	display: flex;
-	flex-direction: column;
+    display: flex;
+	flex-direction: column; 
 	flex-wrap: wrap;
 	flex: 0.3 1 200px; /* Puedes establecer un ancho fijo o permitir que se ajuste según el contenido */
 	margin-left: 2vw;
 	margin-right: 4vw;
 	margin-top: 1px;
 	min-width: 200px;
-
+	
 }
+
+
 	
 
 .lateral, .lateral10 {
@@ -580,7 +617,7 @@ span {
 }
 
 .lateral5 {
-	width: 100%; /* O el ancho que desees */
+	/* width: 100%; O el ancho que desees */
 	margin-bottom: 20px;
 }
 
@@ -595,41 +632,29 @@ span {
 	background-color: white;
 }  
 
-
-/* Ajustes a los textos CAMBIOS DE COLORES*/
-
-.supercontenedor h1 {
-  color: #ff914c;
-  font-size: 2.5rem; /* Tamaño ajustado */
-  margin-bottom: 20px; /* Margen inferior */
+.lateral20 {
+  flex:2;
+  padding: 20px; /* Añadido padding interno */
+  background-color: #f0f0f0; /* Fondo más claro para contraste */
+  background-image: url("./img/nueva-freepik.jpg");
+  width:100%;
+  height: auto;
+  margin-bottom: 1px; 
+  margin-top: 10px;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #004aad;
 }
 
-.supercontenedor p {
-  margin-bottom: 15px; /* Margen entre párrafos */
+.noticias-lateral20 article {
+	margin-top: 5px;
+}
+.titulo-lateral20 {
+	margin-bottom: 10px;
 }
 
-.contenedor {
-	 background-color: white;
-	 border: 3px solid #ff914c;
-}
-
-/* Precios y Grupos */
-
-.precios, .grupos {
-  margin-bottom: 20px; /* Separación entre secciones */
-}
-
-/* Lista */
-
-.contenedor ul {
-  list-style-type: disc;
-  margin-left: 30px;
-  margin-bottom: 20px; /* Separación inferior */
-}
-
-.supercontenedor strong {
-  color: #ff914c;
-}
 
 /* Dispositivos móviles */
 
@@ -678,7 +703,7 @@ span {
 @container (max-height: 200px) {
 	
 	.showcase .sticky-notes {
-		transform: scale(0.3);
+		transform: scale(0.5);
 		top: -25%;
 		left: 55%;
 	}
@@ -717,6 +742,14 @@ span {
 	
 @media (min-width: 1024px) and (max-width: 1600px) and (max-height: 700px)	{
 	
+	h1 {
+		font-size: 2.8rem;
+	}
+	
+	h2 {
+		font-size: 1.6rem;
+	}
+	
 	.sticky-notes {
 		transform: scale(0.8);
 	}
@@ -724,12 +757,28 @@ span {
 
 @media (max-width: 1300px) and (min-width: 1024px) {
 	
+	h1 {
+		font-size: 2.8rem;
+	}
+	
+	h2 {
+		font-size: 1.6rem;
+	}
+	
 	.sticky-notes {
 		transform: scale(0.8);
 	}
 }
 
 @media (max-width: 1024px) and (min-width: 700px) {
+	
+	h1 {
+		font-size: 2.8rem;
+	}
+	
+	h2 {
+		font-size: 1.6rem;
+	}
 	
 	.sticky-notes {
     transform: scale(0.8); /* Reduce el tamaño de la animación al 80% */
@@ -798,6 +847,14 @@ span {
 
 @media (max-width: 1024px) and (min-width: 700px) and (orientation: landscape) {
 	
+	h1 {
+		font-size: 2.8rem;
+	}
+	
+	h2 {
+		font-size: 1.6rem;
+	}
+	
 	.menu-btn {
     display: block;
 	cursor: pointer;
@@ -861,6 +918,14 @@ span {
 
 @media (max-width: 800px) and (min-width: 700px) {
 	
+	h1 {
+		font-size: 2.8rem;
+	}
+	
+	h2 {
+		font-size: 1.6rem;
+	}
+	
 	  .supercontenedor {
     flex-direction: column;
 	margin: 2.5vw 5vw 5vw 2vw;
@@ -902,6 +967,14 @@ span {
 
 
 @media (max-width: 700px) and (min-width: 600px) {
+	
+	h1 {
+		font-size: 2.8rem;
+	}
+	
+	h2 {
+		font-size: 1.6rem;
+	}
 	
    .segundo_titulo {
 	  font-size: 1.3em;
@@ -1008,6 +1081,14 @@ span {
 }
 
 @media (max-width: 700px) and (min-width: 600px) and (orientation: landscape) {
+	
+	h1 {
+		font-size: 2.8rem;
+	}
+	
+	h2 {
+		font-size: 1.6rem;
+	}
 
 	
   .menu-btn {
@@ -1071,6 +1152,14 @@ span {
 
 
 @media (max-width: 600px) and (min-width: 500px) {
+	
+	h1 {
+		font-size: 2.8rem;
+	}
+	
+	h2 {
+		font-size: 1.6rem;
+	}
 	
 	.sticky-notes {
     transform: scale(0.7); /* Reduce el tamaño de la animación al 70% */
@@ -1181,6 +1270,14 @@ span {
 @media (max-width: 600px) and (min-width: 500px) and (orientation: landscape) {
 	
 	
+	h1 {
+		font-size: 2.8rem;
+	}
+	
+	h2 {
+		font-size: 1.6rem;
+	}
+	
   .menu-btn {
     display: block;
 	cursor: pointer;
@@ -1284,6 +1381,15 @@ span {
 
 
 @media (max-width: 500px) and (min-width: 400px) {
+	
+	
+	h1 {
+		font-size: 2.8rem;
+	}
+	
+	h2 {
+		font-size: 1.6rem;
+	}
 	
 	.titulo_inicio {
     font-size: 2.3em; /* Ajusta el tamaño según sea necesario */
@@ -1396,6 +1502,14 @@ span {
 
 @media (max-width: 500px) and (min-width: 400px) and (orientation: landscape) {
 	
+	h1 {
+		font-size: 2.6rem;
+	}
+	
+	h2 {
+		font-size: 1.6rem;
+	}
+	
    .titulo_inicio {
     font-size: 1.9em; /* Ajusta el tamaño según sea necesario */
     line-height: 1.2; /* Mejora el espaciado */
@@ -1435,6 +1549,14 @@ span {
 }
 
 @media (max-width: 400px) and (min-width: 350px) {
+	
+	h1 {
+		font-size: 2.6rem;
+	}
+	
+	h2 {
+		font-size: 1.6rem;
+	}
 	
 	.titulo_inicio {
     font-size: 2.0em; /* Ajusta el tamaño según sea necesario */
@@ -1544,6 +1666,14 @@ span {
 }
 
 @media (max-width: 400px) and (min-width: 350px) and (orientation: landscape) {
+	
+	h1 {
+		font-size: 2.4rem;
+	}
+	
+	h2 {
+		font-size: 1.4rem;
+	}
 	
 	.titulo_inicio {
     font-size: 2.0em; /* Ajusta el tamaño según sea necesario */
@@ -1656,6 +1786,15 @@ span {
 
 @media (max-width: 350px) and (min-width: 300px) {
   
+  
+  h1 {
+		font-size: 2.2rem;
+	}
+	
+	h2 {
+		font-size: 1.2rem;
+	}
+	
   .titulo_inicio {
     font-size: 1.7em; /* Ajusta el tamaño según sea necesario */
     line-height: 1.2;
@@ -1665,6 +1804,10 @@ span {
   .segundo_titulo {
     font-size: 1em;
     line-height: 1.2;
+  }
+  
+  a {
+	  font-size: 0.8rem;
   }
   
   .menu-btn {
@@ -1727,8 +1870,20 @@ span {
   .sticky-notes {
     transform: scale(0.4);
 	top: 10%;
-    left: 25%;
+    left: 55%;
   }
+  
+  .sticky-notes ul li h2 {
+    font-size: 1rem;
+    padding-bottom: 10px;
+    
+}
+
+.sticky-notes ul li p {
+
+    font-size: 0.8rem;
+}
+	
   .news-cards img {
     max-width: 100%;
     height: auto;
@@ -1769,6 +1924,18 @@ span {
 
 @media (max-width: 300px) {
 	
+	h1 {
+		font-size: 2.2rem;
+	}
+	
+	h2 {
+		font-size: 1.2rem;
+	}
+	
+	a {
+	  font-size: 0.8rem;
+  }
+  
 	.sticky-notes {
 		display: none;
 	}
@@ -1782,13 +1949,6 @@ span {
     font-size: 1em;
     line-height: 1.2;
   }
-  
-  
-h1 {
-	color: #ff914c;
-	font-size: 6vh;
-	
-}
   
 
   .menu-btn {
@@ -1837,6 +1997,7 @@ h1 {
 
   .footer-links .footer-container {
     grid-template-columns: 1fr;
+
   }
 
   .cards-banner-one .content {
