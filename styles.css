@@ -532,10 +532,9 @@ hr {
 }
 
 
-.principal, .precios, .grupos {
+.principal, .precios, .grupos p {
     word-wrap: break-word; /* Permitir que las palabras largas se dividan */
     line-height: 1.3; /* Mejorar legibilidad */	
-	text-indent: 0.6rem;
 }
 
 .precios, .grupos {
@@ -639,9 +638,6 @@ span {
 	min-width: 200px;
 	
 }
-
-
-	
 
 .lateral, .lateral10 {
   padding: 20px; /* Añadido padding interno */
