@@ -178,7 +178,7 @@ hr {
 /*Boton menu lateral dispositivos moviles Google Fonts*/
 
 .menu-btn {
-  
+	
   font-weight: normal;
   font-style: normal;
   font-size:40px;  /* Preferred icon size 24 */
@@ -191,6 +191,7 @@ hr {
   direction: ltr;
   color: black;
 }
+
 
 /* Responsive Button */
 .menu-btn {
@@ -523,6 +524,10 @@ hr {
 	min-width: 200px;	
 	background-color: #fafafa;
 	border: 3px solid #ff914c;
+}
+
+.contenedor p {
+	text-indent: 1rem;
 }
 
 .contenedor ul {
@@ -1160,6 +1165,15 @@ span {
   .footer-links .footer-container ul {
     text-align: center;
   }
+  
+   .titulo-lateral20 {
+	margin-bottom: 10px;
+	text-shadow: 2px 2px 5px rgba(169, 169, 169, 0.7),   /* Sombra hacia abajo a la derecha */
+    -2px -2px 5px rgba(169, 169, 169, 0.7), /* Sombra hacia arriba a la izquierda */
+    2px -2px 5px rgba(169, 169, 169, 0.7),  /* Sombra hacia arriba a la derecha */
+    -2px 2px 5px rgba(169, 169, 169, 0.7);  /* Sombra hacia abajo a la izquierda */
+}
+  
 }
 
 
@@ -1245,7 +1259,7 @@ span {
 	margin-bottom: 20px;
 	overflow-x: hidden;
   }
-
+  
   .contlateral {
     flex-wrap: nowrap;
     width: 100%;
@@ -2221,7 +2235,6 @@ span {
     line-height: 1.2;
   }
   
-
   .menu-btn {
     display: block;
     cursor: pointer;
@@ -2326,12 +2339,6 @@ span {
     2px -2px 5px rgba(169, 169, 169, 0.7),  /* Sombra hacia arriba a la derecha */
     -2px 2px 5px rgba(169, 169, 169, 0.7);  /* Sombra hacia abajo a la izquierda */
   }
-  
-   .menu-btn {
-        position: fixed; /* Cambia a fixed para que no encoja por debajo de 220px */
-        top: 15px; /* Ajusta según la posición actual */
-        right: 30px; /* Ajusta según la posición actual */
-    }
 	
 	.nav-brand {
   position: absolute;
@@ -2345,6 +2352,20 @@ h1 {
 	margin-left: 10px;
 }
 	
+}
+
+
+@media (max-width: 220px) {
+	
+	body {
+		position: relative;
+	}
+	
+	.menu-btn {
+	position: absolute;
+	left: 150px;
+	
+	}
 }
 
 
